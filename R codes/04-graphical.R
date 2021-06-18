@@ -1,3 +1,8 @@
+# Chapter 4: Visual Exploration
+# Book: Exploring Data Using R
+# Authors: Kamarul Imran Musa, Wan Nor Arifin
+
+
 ## -----------------------------------------------------------------------------
 library(foreign)
 cholest <- read.dta("cholest.dta")

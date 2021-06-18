@@ -6,7 +6,7 @@ This repository contains data sets and codes for our upcoming Exploring Data Usi
 ## Errata:
 
 ### 1.3 Functions and Objects, page 10:
-The object names (X, Y, Z) are capitalized. These should be x, y, and x instead.
+The object names (X, Y, Z) are capitalized. These should be x, y, and z instead.
 We apologize for the printing errors.
 
 ### 2.4.3 Selecting based on logical expressions, page 32:

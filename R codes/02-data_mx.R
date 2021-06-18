@@ -1,4 +1,7 @@
-# Chapter 2 - Data management
+# Chapter 2 - Data Management
+# Book: Exploring Data Using R
+# Authors: Kamarul Imran Musa, Wan Nor Arifin
+
 
 # Errata:
 # ======
