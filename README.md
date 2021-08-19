@@ -3,7 +3,7 @@ This repository contains data sets and R code for our Exploring Data Using R boo
 
 ~ Kamarul Imran Musa & Wan Nor Arifin ~
 
-![book1](https://wnarifin.github.io/img/rbook1.jpg){width=25%}
+![book1](https://wnarifin.github.io/img/rbook1.jpg)
 
 ## Errata:
 
