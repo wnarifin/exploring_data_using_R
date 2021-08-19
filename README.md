@@ -3,6 +3,8 @@ This repository contains data sets and R code for our Exploring Data Using R boo
 
 ~ Kamarul Imran Musa & Wan Nor Arifin ~
 
+![book1](https://wnarifin.github.io/img/rbook1.jpg){width=25%}
+
 ## Errata:
 
 ### 1.3 Functions and Objects, page 10:
