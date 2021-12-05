@@ -15,6 +15,18 @@
 # 5. Less than <
 # 6. Not equal !=
 # We apologize for the printing errors.
+#
+# 2.6.2.1 From a numerical variable
+# The text:
+# What is meant by `breaks = c(-Inf, 40, 50, Inf)` here is "from minus infinity to below 40, between 40 to 50, from above 50 to infinity".
+# Should be read:
+# What is meant by `breaks = c(-Inf, 40, 50, Inf)` here is "from minus infinity to 40, from above 40 to 50, from above 50 to infinity".
+# The labels should be:
+# labels = c("<= 40", "> 40-50", "> 50") instead of labels = c("< 40", "40-50", "> 50")
+# The following can be added to exclude the upper limit:
+# cut(..., right = FALSE)
+# Then the label will be:
+# labels = c("< 40", "40- < 50", "=> 50")
 
 # 2.1 Reading, Viewing and Exporting Data ====
 data <- read.csv("cholest.csv")
@@ -192,7 +204,10 @@ data$age_month <- data$age * 12
 data$age_month
 
 data$age_cat <- cut(data$age, breaks = c(-Inf, 40, 50, Inf),
-                    labels = c("< 40", "40-50", "> 50"))
+                    labels = c("<= 40", "> 40-50", "> 50"))
+# or to exclude upper limit,
+data$age_cat <- cut(data$age, breaks = c(-Inf, 40, 50, Inf),
+                    labels = c("< 40", "40-50", ">= 50"), right = FALSE)
 
 table(data$age_cat)
 str(data$age_cat)
